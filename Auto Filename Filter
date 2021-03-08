@@ -7,5 +7,5 @@ for filename in os.listdir(path):
     if list in filename:
         print(list)
         filepath = os.path.join(pfad, filename)
-        newfilepath = os.path.join(pfad, filename.replace(filepath, ""))
+        newfilepath = os.path.join(path, filename.replace(filepath, ""))
         os.rename(filepath, newfilepath)
