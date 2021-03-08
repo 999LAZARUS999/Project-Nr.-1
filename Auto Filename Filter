@@ -1,0 +1,10 @@
+import os
+
+path = r"Y:\..."
+list = ["Red", "Green", "Blue"]
+for filename in os.listdir(path):
+    if list in filename:
+        print(list)
+        filepath = os.path.join(pfad, filename)
+        newfilepath = os.path.join(pfad, filename.replace(filepath, ""))
+        os.rename(filepath, newfilepath)
