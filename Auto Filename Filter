@@ -1,7 +1,8 @@
 import os
 
 path = r"Y:\..."
-list = ["Red", "Green", "Blue"]
+#list = ["Red", "Green", "Blue"]        --doesnt work
+list = "Red"
 for filename in os.listdir(path):
     if list in filename:
         print(list)
